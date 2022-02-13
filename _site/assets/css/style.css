@@ -20,6 +20,18 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 @media (min-width: 992px) { .container-fluid { padding-left: 40px; padding-right: 40px; } }
 
+.contact-info__title { font-size: 38px; line-height: 45px; margin-bottom: 0; font-variation-settings: 'wght' 770; }
+
+@media (min-width: 992px) { .contact-info__title { font-size: 28px; line-height: 32px; } }
+
+@media (min-width: 1441px) { .contact-info__title { font-size: 44px; line-height: 48px; } }
+
+#mainRow { position: relative; width: 100%; }
+
+@media (min-width: 992px) { #coverColumn { position: fixed; width: calc(55% - 12px); height: calc(100% - 80px); } }
+
+#mainContent { margin-bottom: 40px; }
+
 .section-service { margin-top: 32px; padding-bottom: 24px; }
 
 @media (min-width: 992px) { .section-service { padding-bottom: 0; } }
@@ -58,19 +70,15 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 .contact-links__arrow svg { margin-right: 0; position: absolute; top: 50%; left: 50%; width: 20px; transform: translate(-50%, -50%) rotate(-90deg); }
 
-.site-moto { margin-top: 24px; font-style: italic; }
+.site-tagline { margin-top: 24px; font-style: italic; }
 
-.site-moto blockquote { font-size: 30px; line-height: 32px; font-style: italic; font-variation-settings: 'wght' 250; }
+.site-tagline__text { font-size: 30px; line-height: 32px; font-style: italic; font-variation-settings: 'wght' 250; margin-bottom: 48px; }
 
-@media (min-width: 992px) { .site-moto blockquote { font-size: 38px; line-height: 48px; } }
+@media (min-width: 992px) { .site-tagline__text { font-size: 38px; line-height: 48px; } }
 
-@media (min-width: 1441px) { .site-moto blockquote { font-size: 44px; line-height: 100%; } }
+@media (min-width: 1441px) { .site-tagline__text { font-size: 44px; line-height: 100%; } }
 
-@media (min-width: 992px) { .site-moto { margin-top: 0; } }
-
-.contact-info__title { font-size: 38px; line-height: 45px; margin-bottom: 0; font-variation-settings: 'wght' 770; }
-
-@media (min-width: 1441px) { .contact-info__title { font-size: 44px; line-height: 52px; } }
+@media (min-width: 992px) { .site-tagline { margin-top: 0; } }
 
 .next-section { position: absolute; padding-top: 24px; padding-bottom: 24px; width: 100%; bottom: 0; }
 

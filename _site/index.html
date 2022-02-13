@@ -24,14 +24,14 @@
     <div id="wrapper" class="d-flex flex-column h-100">
       <main class="site-main">
   <div class="container-fluid align-items-stretch h-100 d-flex">
-    <div class="row">
-      <div class="col-12 col-lg-7 d-flex flex-column">
+    <div class="row" id="mainRow">
+      <div class="col-12 col-lg-7 d-flex flex-column" id="coverColumn">
         <div class="site-cover flex-grow-1 d-flex flex-column justify-content-center">
-          <div class="site-cover__background" style="background-image: url('/assets/img/background.svg')"></div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-              <figure class="site-cover__logo">
-                <svg width="760" height="261" viewBox="0 0 760 261" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="site-cover__background" style="background-image: url('/assets/img/background.svg')"></div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8">
+      <figure class="site-cover__logo">
+        <svg width="760" height="261" viewBox="0 0 760 261" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_412_203)">
 <path d="M99.0676 236.101V167.277H111.307L137.14 232.269L163.062 167.277H175.301V236.101H163.062V174.135L138.361 236.101H135.807L111.373 174.224V236.101H99.0676Z" fill="#061D40"/>
 <path d="M206.887 237.132C203.057 237.171 199.306 236.03 196.136 233.86C192.872 231.604 190.265 228.509 188.584 224.896C186.68 220.915 185.722 216.541 185.785 212.121C185.758 207.806 186.716 203.543 188.584 199.661C190.276 195.986 192.896 192.825 196.181 190.495C199.318 188.281 203.059 187.106 206.887 187.133C210.644 187.101 214.304 188.34 217.282 190.651C220.613 193.378 223.019 197.083 224.168 201.252V188.253H235.785V236.213H224.679V221.668C223.603 226.167 221.156 230.211 217.682 233.233C214.646 235.765 210.826 237.145 206.887 237.132V237.132ZM211.019 227.383C213.424 227.393 215.783 226.709 217.816 225.411C219.874 224.093 221.527 222.223 222.591 220.01C223.767 217.552 224.353 214.85 224.302 212.121C224.346 209.422 223.76 206.751 222.591 204.322C221.527 202.116 219.873 200.253 217.816 198.944C215.763 197.676 213.403 197.005 210.996 197.005C208.59 197.005 206.23 197.676 204.177 198.944C202.186 200.263 200.601 202.118 199.601 204.3C198.53 206.774 197.977 209.444 197.977 212.144C197.977 214.843 198.53 217.514 199.601 219.988C200.612 222.174 202.194 224.042 204.177 225.389C206.21 226.727 208.592 227.421 211.019 227.383V227.383Z" fill="#061D40"/>
@@ -68,19 +68,20 @@
 </defs>
 </svg>
 
-              </figure>
-            </div>
-          </div>
-          <div class="next-section d-lg-none">
-            <span class="next-section__button" data-anchor-target="#mainContent"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </figure>
+    </div>
+  </div>
+  <div class="next-section d-lg-none">
+    <span class="next-section__button" data-anchor-target="#mainContent"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path class="angle" d="M2 10L10 18L18 10" stroke="#F20022" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
 <path class="dash" d="M11 2V1H9V2H11ZM9 18C9 18.5523 9.44772 19 10 19C10.5523 19 11 18.5523 11 18H9ZM9 2V18H11V2H9Z" fill="#F20022"/>
 </svg>
 </span>
-          </div>
-        </div>
+  </div>
+</div>
+
       </div>
-      <div class="col-12 col-lg-5 d-flex flex-column">
+      <div class="col-12 col-lg-5 offset-lg-7 d-flex flex-column">
         <div id="mainContent" class="flex-grow-1 d-flex flex-column">
           <div class="back-to-top d-lg-none">
             <span class="back-to-top__button" data-anchor-target="top"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -89,12 +90,12 @@
 </svg>
 </span>
           </div>
-          <div class="site-moto flex-grow-1">
-            <blockquote>Massagem Ayurvédica para se conectar ao momento presente</blockquote>
+          <div class="site-tagline flex-grow-1">
+            <blockquote class="site-tagline__text">Massagem Ayurvédica para se conectar ao momento presente</blockquote>
           </div>
           <div class="contact-info">
             <div class="row">
-              <div class="col-12 col-lg-7">
+              <div class="col-12 col-xxl-7">
                 <div class="section-service">
                   <h3 class="contact-info__title">Atendimento</h3>
                   <ul class="map-links">
@@ -135,7 +136,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-12 col-lg-5 d-flex flex-column">
+              <div class="col-12 col-xxl-5 d-flex flex-column">
                 <div class="section-contact">
                   <h3 class="contact-info__title">Contato</h3>
                   <ul class="contact-links">

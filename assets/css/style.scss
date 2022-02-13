@@ -29,6 +29,26 @@ body {
     }
 }
 
+// Componentes customizados
+@import 'components/contact-info';
+
+#mainRow {
+  position: relative;
+  width: 100%;
+}
+
+#coverColumn {
+  @include media-breakpoint-up("lg") {
+    position: fixed;
+    width: calc(55% - 12px);
+    height: calc(100% - 80px);
+  }
+}
+
+#mainContent {
+  margin-bottom: 40px;
+}
+
 .section-service {
   margin-top: 32px;
   padding-bottom: 24px;
@@ -131,14 +151,15 @@ body {
     }
 }
 
-.site-moto {
+.site-tagline {
   margin-top: 24px;
   font-style: italic;
-  blockquote {
+  &__text {
     font-size: 30px;
     line-height: 32px;
     font-style: italic;
     font-variation-settings: 'wght' 250;
+    margin-bottom: 48px;
     @include media-breakpoint-up("lg") {
       font-size: 38px;
       line-height: 48px;
@@ -150,19 +171,6 @@ body {
   }
   @include media-breakpoint-up("lg") {
     margin-top: 0;
-  }
-}
-
-.contact-info {
-  &__title {
-    font-size: 38px;
-    line-height: 45px;
-    margin-bottom: 0;
-    font-variation-settings: 'wght' 770;
-    @include media-breakpoint-up("hd") {
-      font-size: 44px;
-      line-height: 52px;
-    }
   }
 }
 

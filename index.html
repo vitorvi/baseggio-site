@@ -3,33 +3,21 @@ layout: base
 ---
 <main class="site-main">
   <div class="container-fluid align-items-stretch h-100 d-flex">
-    <div class="row">
-      <div class="col-12 col-lg-7 d-flex flex-column">
-        <div class="site-cover flex-grow-1 d-flex flex-column justify-content-center">
-          <div class="site-cover__background" style="background-image: url('/assets/img/background.svg')"></div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-              <figure class="site-cover__logo">
-                {% include logo.svg %}
-              </figure>
-            </div>
-          </div>
-          <div class="next-section d-lg-none">
-            <span class="next-section__button" data-anchor-target="#mainContent">{% include svg/arrow-down.svg %}</span>
-          </div>
-        </div>
+    <div class="row" id="mainRow">
+      <div class="col-12 col-lg-7 d-flex flex-column" id="coverColumn">
+        {% include components/site-cover.html %}
       </div>
-      <div class="col-12 col-lg-5 d-flex flex-column">
+      <div class="col-12 col-lg-5 offset-lg-7 d-flex flex-column">
         <div id="mainContent" class="flex-grow-1 d-flex flex-column">
           <div class="back-to-top d-lg-none">
             <span class="back-to-top__button" data-anchor-target="top">{% include svg/arrow-down.svg %}</span>
           </div>
-          <div class="site-moto flex-grow-1">
-            <blockquote>{{ site.description }}</blockquote>
+          <div class="site-tagline flex-grow-1">
+            <blockquote class="site-tagline__text">{{ site.description }}</blockquote>
           </div>
           <div class="contact-info">
             <div class="row">
-              <div class="col-12 col-lg-7">
+              <div class="col-12 col-xxl-7">
                 <div class="section-service">
                   <h3 class="contact-info__title">Atendimento</h3>
                   <ul class="map-links">
@@ -62,7 +50,7 @@ layout: base
                   </ul>
                 </div>
               </div>
-              <div class="col-12 col-lg-5 d-flex flex-column">
+              <div class="col-12 col-xxl-5 d-flex flex-column">
                 <div class="section-contact">
                   <h3 class="contact-info__title">Contato</h3>
                   <ul class="contact-links">

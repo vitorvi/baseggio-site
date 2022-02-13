@@ -1,0 +1,16 @@
+.contact-info {
+  &__title {
+    font-size: 38px;
+    line-height: 45px;
+    margin-bottom: 0;
+    font-variation-settings: 'wght' 770;
+    @include media-breakpoint-up("lg") {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    @include media-breakpoint-up("hd") {
+      font-size: 44px;
+      line-height: 48px;
+    }
+  }
+}
