@@ -1,0 +1,141 @@
+---
+layout: base
+---
+<main class="site-main">
+  <div class="container-fluid align-items-stretch h-100 d-flex">
+    <div class="row">
+      <div class="col-12 col-lg-7 d-flex flex-column">
+        <div class="site-cover flex-grow-1 d-flex flex-column justify-content-center">
+          <div class="site-cover__background" style="background-image: url('/assets/img/background.svg')"></div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+              <figure class="site-cover__logo">
+                {% include logo.svg %}
+              </figure>
+            </div>
+          </div>
+          <div class="next-section d-lg-none">
+            <span class="next-section__button" data-anchor-target="#mainContent">{% include svg/arrow-down.svg %}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 d-flex flex-column">
+        <div id="mainContent" class="flex-grow-1 d-flex flex-column">
+          <div class="back-to-top d-lg-none">
+            <span class="back-to-top__button" data-anchor-target="top">{% include svg/arrow-down.svg %}</span>
+          </div>
+          <div class="site-moto flex-grow-1">
+            <blockquote>{{ site.description }}</blockquote>
+          </div>
+          <div class="contact-info">
+            <div class="row">
+              <div class="col-12 col-lg-7">
+                <div class="section-service">
+                  <h3 class="contact-info__title">Atendimento</h3>
+                  <ul class="map-links">
+                    <li class="map-link">
+                      <a href="https://goo.gl/maps/SWyzxgHUYk76tuBU9" target="_blank" class="link">
+                        <div class="map-link__content">
+                          <p>
+                            <b>Espaço Verde</b><br>
+                            SHIN Trecho 3A<br>
+                            Saída do Lago Norte
+                          </p>
+                        </div>
+                        <p class="map-link__action">Mapa</p>
+                        <span class="map-link__arrow">{% include svg/arrow-down.svg %}</span>
+                      </a>
+                    </li>
+                    <li class="map-link">
+                      <a href="https://goo.gl/maps/SWyzxgHUYk76tuBU9" target="_blank" class="link">
+                        <div class="map-link__content">
+                          <p>
+                            <b>Espaço Ser</b><br>
+                            SHCGN 709<br>
+                            Bloco A Casa 30
+                          </p>
+                        </div>
+                        <p class="map-link__action">Mapa</p>
+                        <span class="map-link__arrow">{% include svg/arrow-down.svg %}</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5 d-flex flex-column">
+                <div class="section-contact">
+                  <h3 class="contact-info__title">Contato</h3>
+                  <ul class="contact-links">
+                    <li class="contact-links__item light-green">
+                      <a href="https://api.whatsapp.com/send/?phone=5561999856795" target="_blank" class="link">Whatsapp <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
+                    </li>
+                    <li class="contact-links__item lighter-blue">
+                      <a href="tel:+5561999856795" class="link" target="_blank">Ligar <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
+                    </li>
+                    <li class="contact-links__item light-pink">
+                      <a href="https://www.instagram.com/baseggio.massoterapia/" class="link" target="_blank">Instagram <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
+                    </li>
+                    <li class="contact-links__item light-orange">
+                      <a href="mailto:ricardo@baseggio.com.br" class="link" target="_blank">E-mail <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="back-to-top d-lg-none">
+                  <span class="back-to-top__button" data-anchor-target="top">{% include svg/arrow-down.svg %}</span>
+                </div>
+                <div class="section-copyright flex-grow-1 d-flex flex-column justify-content-end">
+                  <p>
+                    Copyright © 2022 Ricardo Baseggio<br>
+                    Design: <a href="http://lualeao.design/" target="_blank">Luã Leão</a><br>
+                    Desenvolvimento: <a href="http://vitormarques.com.br/" target="_blank">Vítor Marques</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script type="text/javascript">
+
+  anchorButtons = [].slice.call(document.querySelectorAll('[data-anchor-target]'));
+
+  anchorButtons.forEach(function(button) {
+
+    button.addEventListener('click', function(event) {
+      let targetAnchor = event.target.getAttribute('data-anchor-target');
+      if (targetAnchor == 'top') {
+
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+
+      } else {
+        let targetElement = document.querySelector(targetAnchor);
+        if (targetElement !== null) {
+
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+          });
+
+        }
+      }
+    });
+
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    let wrapper = document.getElementById('wrapper');
+
+    setTimeout(function() {
+      wrapper.classList.add('ready');
+    }, 200);
+
+  });
+
+</script>
