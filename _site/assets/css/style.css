@@ -26,6 +26,62 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 @media (min-width: 1441px) { .contact-info__title { font-size: 44px; line-height: 48px; } }
 
+.contact-card { list-style-type: none; margin-bottom: 8px; background-color: #E4F1F1; border-radius: 32px; padding: 16px; margin-bottom: 0; margin-top: 32px; position: relative; transition: all .25s ease; }
+
+.contact-card--minimal { margin-top: 16px; }
+
+.contact-card--minimal .contact-card__action { color: #061D40; }
+
+.contact-card--lighter-blue { background-color: #E4F1F1; }
+
+.contact-card--light-green { background-color: #CDE789; }
+
+.contact-card--light-pink { background-color: #D9C2C8; }
+
+.contact-card--light-orange { background-color: #EDCA56; }
+
+.contact-card:hover { background-color: #F20022; }
+
+.contact-card:hover a { color: #fff; }
+
+.contact-card:hover a .map-link__arrow { background-color: #E4F1F1; }
+
+.contact-card:hover .contact-card__arrow { border-color: white; }
+
+.contact-card:hover .contact-card__arrow svg .angle { stroke: #fff; }
+
+.contact-card:hover .contact-card__arrow svg .dash { fill: #fff; }
+
+.contact-card:hover .contact-card__action { color: #fff; }
+
+.contact-card:active { background-color: #009983; }
+
+.contact-card:active .contact-card__arrow { border-color: white; }
+
+.contact-card:active .contact-card__arrow svg .angle { stroke: #fff; }
+
+.contact-card:active .contact-card__arrow svg .dash { fill: #fff; }
+
+.contact-card:active .contact-card__action { color: #fff; }
+
+.contact-card a { text-decoration: none; color: #061D40; transition: all .25s ease; }
+
+.contact-card__content p { font-variation-settings: 'wght' 250; font-size: 26px; line-height: 32px; }
+
+@media (min-width: 1441px) { .contact-card__content p { font-size: 30px; line-height: 32px; } }
+
+.contact-card__content b { font-variation-settings: 'wght' 550; }
+
+.contact-card__action { margin-bottom: 0; position: relative; line-height: 44px; color: #F20022; font-variation-settings: 'wght' 550; font-size: 26px; line-height: 32px; transition: all .25s ease; }
+
+@media (min-width: 1441px) { .contact-card__action { font-size: 30px; line-height: 32px; } }
+
+.contact-card__arrow { display: inline-block; width: 44px; height: 44px; border: 2px solid #F20022; border-radius: 50%; position: absolute; right: 8px; bottom: 8px; transition: all .25s ease; }
+
+.contact-card__arrow svg { margin-right: 0; position: absolute; top: 50%; left: 50%; width: 20px; transform: translate(-50%, -50%) rotate(-90deg); }
+
+.contact-card__arrow svg * { transition: all .25s ease; }
+
 #mainRow { position: relative; width: 100%; }
 
 @media (min-width: 992px) { #coverColumn { position: fixed; width: calc(55% - 12px); height: calc(100% - 80px); } }
@@ -72,7 +128,7 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 .site-tagline { margin-top: 24px; font-style: italic; }
 
-.site-tagline__text { font-size: 30px; line-height: 32px; font-style: italic; font-variation-settings: 'wght' 250; margin-bottom: 48px; }
+.site-tagline__text { font-size: 30px; line-height: 32px; font-style: italic; font-variation-settings: 'wght' 250; margin-bottom: 32px; }
 
 @media (min-width: 992px) { .site-tagline__text { font-size: 38px; line-height: 48px; } }
 

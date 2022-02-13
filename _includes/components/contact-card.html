@@ -1,0 +1,13 @@
+<div class="contact-card contact-card--{{ include.type }} contact-card--{{ include.color }}">
+  <a href="{{ include.url }}" target="_blank" class="contact-card__link">
+    {% if include.type == "full" %}
+      <div class="contact-card__content">
+        <p>
+          {{ include.address }}
+        </p>
+      </div>
+    {% endif %}
+    <p class="contact-card__action">{{ include.action-label }}</p>
+    <span class="contact-card__arrow">{% include svg/arrow-down.svg %}</span>
+  </a>
+</div>

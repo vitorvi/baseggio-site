@@ -20,53 +20,69 @@ layout: base
               <div class="col-12 col-xxl-7">
                 <div class="section-service">
                   <h3 class="contact-info__title">Atendimento</h3>
-                  <ul class="map-links">
-                    <li class="map-link">
-                      <a href="https://goo.gl/maps/SWyzxgHUYk76tuBU9" target="_blank" class="link">
-                        <div class="map-link__content">
-                          <p>
-                            <b>Espaço Verde</b><br>
-                            SHIN Trecho 3A<br>
-                            Saída do Lago Norte
-                          </p>
-                        </div>
-                        <p class="map-link__action">Mapa</p>
-                        <span class="map-link__arrow">{% include svg/arrow-down.svg %}</span>
-                      </a>
-                    </li>
-                    <li class="map-link">
-                      <a href="https://goo.gl/maps/SWyzxgHUYk76tuBU9" target="_blank" class="link">
-                        <div class="map-link__content">
-                          <p>
-                            <b>Espaço Ser</b><br>
-                            SHCGN 709<br>
-                            Bloco A Casa 30
-                          </p>
-                        </div>
-                        <p class="map-link__action">Mapa</p>
-                        <span class="map-link__arrow">{% include svg/arrow-down.svg %}</span>
-                      </a>
-                    </li>
-                  </ul>
+
+                  <div class="contact-links">
+                    {% include components/contact-card.html
+                      url="https://goo.gl/maps/SWyzxgHUYk76tuBU9"
+                      action-label="Mapa"
+                      address="<b>Espaço Terapêutico</b><br>Polo Verde<br>do Lago Norte"
+                      color=""
+                      type="full" 
+                    %}
+                    {% include components/contact-card.html
+                      url="https://goo.gl/maps/4D14vnY2CRmQxToQ8"
+                      action-label="Mapa"
+                      address="<b>Espaço Verde</b><br>SHIN Trecho 3A<br>Saída do Lago Norte"
+                      color=""
+                      type="full" 
+                    %}
+                  </div>
+
+                  {% comment %}
+                    {% for contact in site.data.contact %}
+                      {% include components/contact-card.html
+                        url="https://goo.gl/maps/SWyzxgHUYk76tuBU9"
+                        action-label="Mapa"
+                        address="<b>Espaço Terapêutico</b><br>Polo Verde<br>do Lago Norte"
+                        color=""
+                      %}
+                    {% endfor %}
+                  {% endcomment %}
+
                 </div>
               </div>
               <div class="col-12 col-xxl-5 d-flex flex-column">
                 <div class="section-contact">
                   <h3 class="contact-info__title">Contato</h3>
-                  <ul class="contact-links">
-                    <li class="contact-links__item light-green">
-                      <a href="https://api.whatsapp.com/send/?phone=5561999856795" target="_blank" class="link">Whatsapp <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
-                    </li>
-                    <li class="contact-links__item lighter-blue">
-                      <a href="tel:+5561999856795" class="link" target="_blank">Ligar <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
-                    </li>
-                    <li class="contact-links__item light-pink">
-                      <a href="https://www.instagram.com/baseggio.massoterapia/" class="link" target="_blank">Instagram <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
-                    </li>
-                    <li class="contact-links__item light-orange">
-                      <a href="mailto:ricardo@baseggio.com.br" class="link" target="_blank">E-mail <span class="contact-links__arrow">{% include svg/arrow-down.svg %}</span></a>
-                    </li>
-                  </ul>
+
+                  <div class="contact-links">
+                    {% include components/contact-card.html
+                      url="https://api.whatsapp.com/send/?phone=5561999856795"
+                      action-label="Whatsapp"
+                      color="light-green"
+                      type="minimal"
+                    %}
+                    {% include components/contact-card.html
+                      url="tel:+5561999856795"
+                      action-label="Ligar"
+                      color="lighter-blue"
+                      hide_on_desktop="true"
+                      type="minimal"
+                    %}
+                    {% include components/contact-card.html
+                      url="https://www.instagram.com/baseggio.massoterapia/"
+                      action-label="Instagram"
+                      color="light-pink"
+                      type="minimal"
+                    %}
+                    {% include components/contact-card.html
+                      url="mailto:ricardo@baseggio.com.br"
+                      action-label="E-mail"
+                      color="light-orange"
+                      type="minimal"
+                    %}
+                  </div>
+
                 </div>
                 <div class="back-to-top d-lg-none">
                   <span class="back-to-top__button" data-anchor-target="top">{% include svg/arrow-down.svg %}</span>

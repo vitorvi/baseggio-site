@@ -31,6 +31,7 @@ body {
 
 // Componentes customizados
 @import 'components/contact-info';
+@import 'components/contact-card';
 
 #mainRow {
   position: relative;
@@ -159,7 +160,7 @@ body {
     line-height: 32px;
     font-style: italic;
     font-variation-settings: 'wght' 250;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     @include media-breakpoint-up("lg") {
       font-size: 38px;
       line-height: 48px;
@@ -361,7 +362,7 @@ body {
     text-decoration: none;
     color: $deep-blue;
     &:hover {
-        color: $deep-blue;
+      color: $deep-blue;
     //     text-decoration: underline;
     }
 }
