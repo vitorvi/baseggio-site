@@ -84,9 +84,9 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 #mainRow { position: relative; width: 100%; }
 
-@media (min-width: 992px) { #coverColumn { position: fixed; width: calc(55% - 12px); height: calc(100% - 80px); } }
+@media (min-width: 992px) { #coverColumn { position: fixed; width: calc(55% - 12px); height: calc(100% - 80px); top: 40px; } }
 
-#mainContent { margin-bottom: 40px; }
+#mainContent { padding-top: 40px; padding-bottom: 40px; min-height: 100vh; }
 
 .section-service { margin-top: 32px; padding-bottom: 24px; }
 
@@ -187,8 +187,6 @@ body { height: 100%; background-color: white; color: #061D40; }
 @media (min-width: 992px) { .site-cover__background { width: 100%; } }
 
 .site-main { padding-bottom: 24px; padding-top: 0; min-height: 100%; opacity: 0; transition: opacity .25s ease .25s; }
-
-@media (min-width: 992px) { .site-main { padding-bottom: 40px; padding-top: 40px; } }
 
 .link { text-decoration: none; color: #061D40; }
 

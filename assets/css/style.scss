@@ -43,11 +43,14 @@ body {
     position: fixed;
     width: calc(55% - 12px);
     height: calc(100% - 80px);
+    top: 40px;
   }
 }
 
 #mainContent {
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 100vh;
 }
 
 .section-service {
@@ -353,8 +356,8 @@ body {
     opacity: 0;
     transition: opacity .25s ease .25s;
     @include media-breakpoint-up("lg") {
-      padding-bottom: 40px;
-      padding-top: 40px;
+      // padding-bottom: 40px;
+      // padding-top: 40px;
     }
 }
 
