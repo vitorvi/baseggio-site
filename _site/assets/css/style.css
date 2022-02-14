@@ -20,12 +20,6 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 @media (min-width: 992px) { .container-fluid { padding-left: 40px; padding-right: 40px; } }
 
-#mainRow { position: relative; width: 100%; }
-
-@media (min-width: 992px) { #coverColumn { position: fixed; width: calc(55% - 12px); height: calc(100% - 80px); top: 40px; } }
-
-#mainContent { padding-top: 40px; padding-bottom: 40px; min-height: 100vh; }
-
 .contact-info__title { font-size: 38px; line-height: 45px; margin-bottom: 0; margin-top: 32px; font-variation-settings: 'wght' 770; }
 
 @media (min-width: 992px) { .contact-info__title { font-size: 28px; line-height: 32px; } }
@@ -118,6 +112,8 @@ body { height: 100%; background-color: white; color: #061D40; }
 
 .back-to-top__button svg { pointer-events: none; margin-right: 0; position: absolute; top: 50%; left: 50%; width: 20px; transform: translate(-50%, -50%) rotate(-180deg); }
 
+@media (min-width: 992px) { #coverColumn { position: fixed; width: calc(55% - 12px); height: calc(100% - 80px); top: 40px; } }
+
 .site-cover { position: relative; border-radius: 0; overflow: visible; min-height: 100vh; position: relative; }
 
 @media (min-width: 992px) { .site-cover { border-radius: 32px; overflow: hidden; min-height: 0; } }
@@ -145,5 +141,9 @@ body { height: 100%; background-color: white; color: #061D40; }
 @media (min-width: 992px) { .section-copyright p { font-size: 12px; line-height: 16px; } }
 
 .section-copyright p a { text-decoration: underline; color: #91C6C8; }
+
+#mainRow { position: relative; width: 100%; }
+
+#mainContent { padding-top: 40px; padding-bottom: 40px; min-height: 100vh; }
 
 /*# sourceMappingURL=style.css.map */

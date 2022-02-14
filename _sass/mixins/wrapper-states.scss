@@ -1,0 +1,7 @@
+@mixin wrapper-ready {
+  #wrapper {
+    &.ready {
+      @content;
+    }
+  }
+}

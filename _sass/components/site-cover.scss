@@ -1,3 +1,12 @@
+#coverColumn {
+  @include media-breakpoint-up("lg") {
+    position: fixed;
+    width: calc(55% - 12px);
+    height: calc(100% - 80px);
+    top: 40px;
+  }
+}
+
 .site-cover {
   position: relative;
   border-radius: 0;

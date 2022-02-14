@@ -1,43 +1,17 @@
 ---
 ---
 
-@import 'fonts';
+// Variables
 @import 'variables/colors';
-@import 'variables/breakpoints';
-
-@import 'mixins/breakpoints';
-@mixin wrapper-ready {
-  #wrapper {
-    &.ready {
-      @content;
-    }
-  }
-}
-
-@import 'unclassed';
-@import 'bootstrap-reset';
-
-#mainRow {
-  position: relative;
-  width: 100%;
-}
-
-#coverColumn {
-  @include media-breakpoint-up("lg") {
-    position: fixed;
-    width: calc(55% - 12px);
-    height: calc(100% - 80px);
-    top: 40px;
-  }
-}
-
-#mainContent {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  min-height: 100vh;
-}
-
-// Componentes customizados
+@import 'variables/bootstrap__variables';
+// Mixins
+@import 'mixins/bootstrap__breakpoints';
+@import 'mixins/wrapper-states';
+// Basic Styles
+@import 'base/fonts';
+@import 'base/unclassed';
+@import 'base/bootstrap-reset';
+// components
 @import 'components/contact-info';
 @import 'components/contact-card';
 @import 'components/section-service';
@@ -48,3 +22,14 @@
 @import 'components/site-cover';
 @import 'components/site-main';
 @import 'components/section-copyright';
+
+#mainRow {
+  position: relative;
+  width: 100%;
+}
+
+#mainContent {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 100vh;
+}
