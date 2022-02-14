@@ -3,7 +3,11 @@
   {% include head.html %}
   <body>
     <div id="wrapper" class="d-flex flex-column h-100">
-      {{ content }}
+    {{ content }}
     </div>
+    <script type="text/javascript">
+      {% include scripts/anchor-buttons.js %}
+      {% include scripts/content-loaded.js %}
+    </script>
   </body>
 </html>

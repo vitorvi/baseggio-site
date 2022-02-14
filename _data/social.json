@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://api.whatsapp.com/send/?phone=5561999856795",
+    "action-label": "Whatsapp",
+    "address": "",
+    "color": "light-green",
+    "type": "minimal"
+  },
+  {
+    "url": "tel:+5561999856795",
+    "action-label": "Ligar",
+    "address": "",
+    "color": "lighter-blue",
+    "type": "minimal"
+  },
+  {
+    "url": "https://www.instagram.com/baseggio.massoterapia/",
+    "action-label": "Instagram",
+    "address": "",
+    "color": "light-pink",
+    "type": "minimal"
+  },
+  {
+    "url": "mailto:ricardo@baseggio.com.br",
+    "action-label": "E-mail",
+    "address": "",
+    "color": "light-orange",
+    "type": "minimal"
+  }
+]

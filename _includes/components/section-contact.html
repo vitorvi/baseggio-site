@@ -1,0 +1,14 @@
+<div class="section-contact">
+  <h3 class="contact-info__title">Contato</h3>
+  <div class="contact-links">
+    {% for media in site.data.social %}
+      {% include components/contact-card.html
+        url=media.url
+        action-label=media.action-label
+        address=media.address
+        color=media.color
+        type="minimal"
+      %}
+    {% endfor %}
+  </div>
+</div>

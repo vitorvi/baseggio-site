@@ -1,0 +1,14 @@
+<div class="section-service">
+  <h3 class="contact-info__title">Atendimento</h3>
+  <div class="contact-links">
+    {% for location in site.data.addresses %}
+      {% include components/contact-card.html
+        url=location.url
+        action-label=location.action-label
+        address=location.address
+        color=location.color
+        type="full"
+      %}
+    {% endfor %}
+  </div>
+</div>

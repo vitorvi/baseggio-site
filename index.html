@@ -5,95 +5,21 @@ layout: base
   <div class="container-fluid align-items-stretch h-100 d-flex">
     <div class="row" id="mainRow">
       <div class="col-12 col-lg-7 d-flex flex-column" id="coverColumn">
-        {% include components/site-cover.html %}
+      {% include components/site-cover.html %}
       </div>
       <div class="col-12 col-lg-5 offset-lg-7 d-flex flex-column">
         <div id="mainContent" class="flex-grow-1 d-flex flex-column">
-          <div class="back-to-top d-lg-none">
-            <span class="back-to-top__button" data-anchor-target="top">{% include svg/arrow-down.svg %}</span>
-          </div>
-          <div class="site-tagline flex-grow-1">
-            <blockquote class="site-tagline__text">{{ site.description }}</blockquote>
-          </div>
+          {% include components/back-to-top.html %}
+          {% include components/site-tagline.html %}
           <div class="contact-info">
             <div class="row">
               <div class="col-12 col-xxl-7">
-                <div class="section-service">
-                  <h3 class="contact-info__title">Atendimento</h3>
-
-                  <div class="contact-links">
-                    {% include components/contact-card.html
-                      url="https://goo.gl/maps/SWyzxgHUYk76tuBU9"
-                      action-label="Mapa"
-                      address="<b>Espaço Terapêutico</b><br>Polo Verde<br>do Lago Norte"
-                      color=""
-                      type="full"
-                    %}
-                    {% include components/contact-card.html
-                      url="https://goo.gl/maps/4D14vnY2CRmQxToQ8"
-                      action-label="Mapa"
-                      address="<b>Espaço Ser</b><br>SHIN Trecho 3A<br>Saída do Lago Norte"
-                      color=""
-                      type="full"
-                    %}
-                  </div>
-
-                  {% comment %}
-                    {% for contact in site.data.contact %}
-                      {% include components/contact-card.html
-                        url="https://goo.gl/maps/SWyzxgHUYk76tuBU9"
-                        action-label="Mapa"
-                        address="<b>Espaço Terapêutico</b><br>Polo Verde<br>do Lago Norte"
-                        color=""
-                      %}
-                    {% endfor %}
-                  {% endcomment %}
-
-                </div>
+              {% include components/section-service.html %}
               </div>
               <div class="col-12 col-xxl-5 d-flex flex-column">
-                <div class="section-contact">
-                  <h3 class="contact-info__title">Contato</h3>
-
-                  <div class="contact-links">
-                    {% include components/contact-card.html
-                      url="https://api.whatsapp.com/send/?phone=5561999856795"
-                      action-label="Whatsapp"
-                      color="light-green"
-                      type="minimal"
-                    %}
-                    {% include components/contact-card.html
-                      url="tel:+5561999856795"
-                      action-label="Ligar"
-                      color="lighter-blue"
-                      hide_on_desktop="true"
-                      type="minimal"
-                    %}
-                    {% include components/contact-card.html
-                      url="https://www.instagram.com/baseggio.massoterapia/"
-                      action-label="Instagram"
-                      color="light-pink"
-                      type="minimal"
-                    %}
-                    {% include components/contact-card.html
-                      url="mailto:ricardo@baseggio.com.br"
-                      action-label="E-mail"
-                      color="light-orange"
-                      type="minimal"
-                    %}
-                  </div>
-
-                </div>
-                <div class="back-to-top d-lg-none">
-                  <span class="back-to-top__button" data-anchor-target="top">{% include svg/arrow-down.svg %}</span>
-                </div>
-                <div class="section-copyright flex-grow-1 d-flex flex-column justify-content-end">
-                  <p>
-                    Copyright © 2022 Ricardo Baseggio<br>
-                    Design: <a href="http://lualeao.design/" target="_blank">Luã Leão</a><br>
-                    Desenvolvimento: <a href="http://vitormarques.com.br/" target="_blank">Vítor Marques</a>
-                  </p>
-                </div>
+              {% include components/section-contact.html %}
+              {% include components/back-to-top.html %}
+              {% include components/section-copyright.html %}
               </div>
             </div>
           </div>
@@ -102,44 +28,3 @@ layout: base
     </div>
   </div>
 </main>
-
-<script type="text/javascript">
-
-  anchorButtons = [].slice.call(document.querySelectorAll('[data-anchor-target]'));
-
-  anchorButtons.forEach(function(button) {
-
-    button.addEventListener('click', function(event) {
-      let targetAnchor = event.target.getAttribute('data-anchor-target');
-      if (targetAnchor == 'top') {
-
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-        });
-
-      } else {
-        let targetElement = document.querySelector(targetAnchor);
-        if (targetElement !== null) {
-
-          window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-          });
-
-        }
-      }
-    });
-
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    let wrapper = document.getElementById('wrapper');
-
-    setTimeout(function() {
-      wrapper.classList.add('ready');
-    }, 200);
-
-  });
-
-</script>
