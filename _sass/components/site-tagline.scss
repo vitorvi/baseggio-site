@@ -1,0 +1,22 @@
+.site-tagline {
+  margin-top: 24px;
+  font-style: italic;
+  &__text {
+    font-size: 30px;
+    line-height: 32px;
+    font-style: italic;
+    font-variation-settings: 'wght' 250;
+    margin-bottom: 32px;
+    @include media-breakpoint-up("lg") {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    @include media-breakpoint-up("hd") {
+      font-size: 44px;
+      line-height: 100%;
+    }
+  }
+  @include media-breakpoint-up("lg") {
+    margin-top: 0;
+  }
+}

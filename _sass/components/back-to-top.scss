@@ -1,0 +1,25 @@
+.back-to-top {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  bottom: 0;
+  &__button {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border: 2px solid $red;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    svg {
+      pointer-events: none;
+      margin-right: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      transform: translate(-50%, -50%)  rotate(-180deg);
+    }
+  }
+}

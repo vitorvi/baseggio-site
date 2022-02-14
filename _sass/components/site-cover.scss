@@ -1,0 +1,44 @@
+.site-cover {
+  position: relative;
+  border-radius: 0;
+  overflow: visible;
+  min-height: 100vh;
+  position: relative;
+  @include media-breakpoint-up("lg") {
+    border-radius: 32px;
+    overflow: hidden;
+    min-height: 0;
+  }
+  &__logo {
+    position: relative;
+    margin-bottom: 0;
+    svg {
+      width: 100%;
+    }
+  }
+  &__background {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    right: 0;
+    margin-bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transform-origin: center;
+    transform: translateX(-50%) scale(1.05);
+    transition: transform .25s ease .25s;
+    @include media-breakpoint-up("lg") {
+      width: 100%;
+    }
+  }
+}
+
+@include wrapper-ready {
+  .site-cover {
+    &__background {
+      transform: translateX(-50%) scale(1);
+    }
+  }
+}

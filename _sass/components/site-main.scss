@@ -1,0 +1,13 @@
+.site-main {
+  padding-bottom: 24px;
+  padding-top: 0;
+  min-height: 100%;
+  opacity: 0;
+  transition: opacity .25s ease .25s;
+}
+
+@include wrapper-ready {
+  .site-main {
+    opacity: 1;
+  }
+}

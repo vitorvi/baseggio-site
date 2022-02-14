@@ -1,0 +1,7 @@
+.section-service {
+  margin-top: 32px;
+  padding-bottom: 24px;
+  @include media-breakpoint-up("lg") {
+    padding-bottom: 0;
+  }
+}

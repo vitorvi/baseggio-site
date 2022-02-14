@@ -1,0 +1,6 @@
+.section-contact {
+  padding-bottom: 24px;
+  @include media-breakpoint-up("lg") {
+    padding-bottom: 24px;
+  }
+}
