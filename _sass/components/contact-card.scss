@@ -80,7 +80,7 @@
       font-variation-settings: 'wght' 250;
       font-size: 26px;
       line-height: 32px;
-      @include media-breakpoint-up("hd") {
+      @include media-breakpoint-up("xxxl") {
         font-size: 30px;
         line-height: 32px;
       }
@@ -98,7 +98,7 @@
     font-size: 26px;
     line-height: 32px;
     @include card-transition;
-    @include media-breakpoint-up("hd") {
+    @include media-breakpoint-up("xxxl") {
       font-size: 30px;
       line-height: 32px;
     }

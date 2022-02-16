@@ -2,14 +2,14 @@
   &__title {
     font-size: 38px;
     line-height: 45px;
-    margin-bottom: 0;
-    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-top: 0;
     font-variation-settings: 'wght' 770;
     @include media-breakpoint-up("lg") {
       font-size: 28px;
       line-height: 32px;
     }
-    @include media-breakpoint-up("hd") {
+    @include media-breakpoint-up("xxxl") {
       font-size: 44px;
       line-height: 48px;
     }
